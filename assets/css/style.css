@@ -1,0 +1,284 @@
+
+/* Barra de Navegacion */ 
+
+.navbar{
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: end;
+
+}
+
+/*estilo generales*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Roboto Mono', monospace;
+    color: aliceblue;
+}
+
+.seccionOscura{
+    color: white;
+    background-color: #1b1b32
+    ;
+}
+
+.seccionClara {
+    color: black;
+    background-color: white;
+  }
+
+.seccionTitulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    margin: 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.seccionTexto{
+    font-size: 1.2rem;
+}
+
+.textoBlanco{
+    color: white;
+}
+
+.textoNegro{
+    color: black;
+}
+
+/*Seccion hero */
+
+.hero{
+    background-color: aliceblue;
+    min-height: 450px;
+    text-align: center;
+    background-image: url(../image/fondoportafolio.jpg);
+    background-repeat: no-repeat;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.imgFace{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+/*SOBRE MI*/
+
+.sobreMi{
+    height: 400px;
+    padding: 10px;
+}
+
+.sobreMi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+/*Experiencia*/
+
+.experiencia{
+    padding: 40px 40px 60px 40px;
+
+}
+
+.experiencia .row div{
+    height: 250px;
+    padding: 15px;
+    color: white;
+    background-color: #1b1b32;
+    border: 2px solid #8080804d;
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    padding: 8px 19px;
+    border-radius: 50%;
+    background-color:#0f0f1b;
+    color: chartreuse;
+}
+
+.experienciaTitulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+/*Estudios*/
+
+.estudios {
+    padding: 20px 40px 60px 40px;
+}
+
+.estudios .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.estudios .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+}
+
+.estudios i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+
+/*Proyectos*/
+
+.proyectos{
+    padding: 40px;
+}
+
+.proyectos img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectosContenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay{
+    transition:  all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyectoGaleria{
+    position: relative;
+}
+
+.proyectoGaleria:hover img{
+    opacity: 0.2;
+}
+
+.proyectoGaleria:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .iconosContenedor{
+    display: flex;
+    
+}
+
+.overlay i{
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+    
+}
+
+/*FOOTER*/
+
+footer{
+    min-height: 500px;
+}
+
+.iconosRedes a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconosRedes i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2 ease-in;
+
+}
+
+.iconosRedes a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253)
+}
+
+.iconosRedes a:hover i{
+    color: black;
+}
+
+/* RESPONSIVE  */
+
+@media screen and (max-width:400px){
+    .overlay p{
+        font-size: 18px;
+    }
+
+    .overlay i{
+        font-size: 40px;
+    }
+}
+
+.derechosAutor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
