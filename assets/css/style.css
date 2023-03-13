@@ -264,6 +264,31 @@ footer{
     color: black;
 }
 
+
+/* LOGIN */
+
+.login{
+    height: 45vh;
+}
+
+.formulario-login{
+    margin-top: auto;
+}
+
+
+/* PANEL */
+
+.iconosPanel {
+    font-size: 1.5rem;
+    
+}
+
+.iconosPanel a{
+    text-decoration: none;
+    color: #000;
+}
+
+
 /* RESPONSIVE  */
 
 @media screen and (max-width:400px){
